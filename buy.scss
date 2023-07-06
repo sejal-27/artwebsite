@@ -1,0 +1,49 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    body{
+        font-size: 35px;
+        font-family: serif;
+    }
+}
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 10%;
+  background-color:rgb(255, 177, 203) ;
+
+  &__logo {
+    font-size: 40px;
+    color: black;
+    width: 39.55%;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-left: 40px;
+  }
+  &__menu {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+    
+
+    &-1,&-2,&-3,&-4,&-5{
+        a{
+            color: black;
+            text-decoration: none;
+            transition: transform .2s;
+            font-size: 25px;
+             padding: 10px;
+        }
+         a:hover{
+            color: white;
+            background-color: rgb(147, 109, 165);
+            transform: scale(3px);
+            font-size: 30px;
+        }
+    }
+  }
+}
+
