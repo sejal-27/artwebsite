@@ -1,11 +1,15 @@
 * {
+  margin: 0px 0px;
   padding: 0px;
-  margin: 0px;
   box-sizing: border-box;
 }
-* body {
-  font-size: 35px;
+* .body {
   font-family: serif;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
 }
 
 .header {
@@ -14,31 +18,172 @@
   justify-content: space-between;
   height: 10%;
   background-color: rgb(255, 177, 203);
+  align-items: center;
+  background-size: contain;
 }
 .header__logo {
-  font-size: 40px;
+  font-size: 4vw;
   color: black;
   width: 39.55%;
-  padding-bottom: 20px;
-  padding-top: 10px;
-  padding-left: 40px;
+  margin-left: 1vw;
 }
 .header__menu {
   display: flex;
   flex-direction: row;
-  gap: 20px;
-  padding: 20px;
+  gap: 10px;
+  font-size: 2vw;
+  width: 60.45%;
 }
 .header__menu-1 a, .header__menu-2 a, .header__menu-3 a, .header__menu-4 a, .header__menu-5 a {
   color: black;
   text-decoration: none;
   transition: transform 0.2s;
-  font-size: 25px;
-  padding: 10px;
 }
 .header__menu-1 a:hover, .header__menu-2 a:hover, .header__menu-3 a:hover, .header__menu-4 a:hover, .header__menu-5 a:hover {
   color: white;
   background-color: rgb(147, 109, 165);
   transform: scale(3px);
-  font-size: 30px;
+  font-size: 2.5vw;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-image: url(buybg.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 80%;
+  width: 100vw;
+}
+.main__heading {
+  font-family: cursive;
+  text-decoration: underline;
+  font-size: 4vw;
+  margin-top: 5%;
+  color: black;
+  background-color: rgb(147, 109, 165);
+  border-radius: 5%;
+}
+.main__table {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10%;
+  font-size: 2vw;
+  width: 100%;
+  height: 100vh;
+}
+.main__table-1 .heading, .main__table-2 .heading, .main__table-3 .heading {
+  background-color: rgb(201, 164, 164);
+  padding: 10px;
+  width: 20vw;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20%;
+}
+.main__table-1 .heading .details, .main__table-2 .heading .details, .main__table-3 .heading .details {
+  font-size: 1.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__table-1 .heading:hover, .main__table-2 .heading:hover, .main__table-3 .heading:hover {
+  background-color: rgb(147, 109, 165);
+  background-size: contain;
+  box-shadow: 10px 10px burlywood;
+}
+.main__table .image_1 {
+  background-image: url("./buy_product1.jpeg");
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.main__table .image_2 {
+  background-image: url("./buy_product2.jpeg");
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.main__table .image_3 {
+  background-image: url("./buy_product3.jpeg");
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.main__table .button {
+  color: black;
+  font-size: 1.5vw;
+  padding: auto;
+}
+.main__table .button:hover {
+  background-color: white;
+  border: 2px solid rgb(255, 177, 203);
+  color: black;
+  border-radius: 10%;
+  font-size: 2vw;
+  padding: auto;
+  text-transform: uppercase;
+}
+.main .footer {
+  height: 10%;
+  background-color: palevioletred;
+  display: flex;
+  flex-direction: row;
+  gap: 1%;
+  align-items: center;
+  justify-content: right;
+}
+.main .footer [class^=footer__] img {
+  background-size: contain;
+  width: 3vw;
+  height: 3vw;
+  border-radius: 100%;
+}
+
+@media (max-width: 650px) {
+  .header__logo {
+    display: none;
+  }
+  .header__menu {
+    font-size: 4vw;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+  }
+  .main__table {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+  .main__table .details {
+    font-size: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+  }
+  .main__table__heading {
+    font-size: 6vw;
+    height: auto;
+    width: auto;
+  }
 }/*# sourceMappingURL=buy.css.map */
