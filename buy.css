@@ -77,6 +77,11 @@
   width: 100%;
   height: 100vh;
 }
+.main__table-1, .main__table-2, .main__table-3 {
+  box-shadow: 0 10px 25px black;
+  transition: 0.3s;
+  border-radius: 20%;
+}
 .main__table-1 .heading, .main__table-2 .heading, .main__table-3 .heading {
   background-color: rgb(201, 164, 164);
   padding: 10px;
@@ -97,7 +102,8 @@
 .main__table-1 .heading:hover, .main__table-2 .heading:hover, .main__table-3 .heading:hover {
   background-color: rgb(147, 109, 165);
   background-size: contain;
-  box-shadow: 10px 10px burlywood;
+  box-shadow: 0 30px 45px black;
+  border-radius: 20%;
 }
 .main__table .image_1 {
   background-image: url("./buy_product1.jpeg");
@@ -191,6 +197,7 @@
     align-items: center;
     justify-content: center;
     gap: 20%;
+    position: relative;
   }
   .footer [class^=footer__] img {
     background-size: contain;
@@ -201,5 +208,6 @@
     justify-content: center;
     padding: auto;
     margin-bottom: 8px;
+    position: absolute;
   }
 }/*# sourceMappingURL=buy.css.map */
