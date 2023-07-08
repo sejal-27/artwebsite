@@ -65,7 +65,7 @@
   margin-top: 5%;
   color: black;
   background-color: rgb(147, 109, 165);
-  border-radius: 5%;
+  border-radius: 0%;
 }
 .main__table {
   display: flex;
