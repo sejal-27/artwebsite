@@ -92,6 +92,9 @@
     &-1,
     &-2,
     &-3 {
+      box-shadow:0 10px 25px black;
+      transition: 0.3s;
+      border-radius: 20%;
       .heading {
         background-color: rgb(201, 164, 164);
         padding: 10px;
@@ -114,7 +117,8 @@
       .heading:hover {
         background-color: rgb(147, 109, 165);
         background-size: contain;
-        box-shadow: 10px 10px burlywood;
+        box-shadow:0 30px 45px black;
+      border-radius: 20%;
       }
     }
     .image_1 {
@@ -221,6 +225,7 @@
   align-items: center;
   justify-content: center;
   gap: 20%;
+  position: relative;
  
 [class^="footer__"]{
   img{
@@ -233,6 +238,7 @@
   justify-content: center;
   padding: auto;
   margin-bottom: 8px;
+  position: absolute;
     
 
   }    
