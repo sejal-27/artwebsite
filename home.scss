@@ -63,8 +63,10 @@
     background-size: contain;
     background-repeat: no-repeat;
     width: 40%;
-    margin-top: 5%;
+    margin-top: 10%;
     margin-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
   &__text {
     width: 60%;
@@ -72,7 +74,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     &-1 {
       font-size: 4vh;
       font-family: cursive;
@@ -95,12 +96,9 @@
   background-color: palevioletred;
   display: flex;
   flex-direction: row;
-  gap: 1%;
-  
+  gap: 1%;  
   align-items: center;
   justify-content: right;
- 
- 
 [class^="footer__"]{
   img{
   background-size: contain;
@@ -115,7 +113,7 @@
 
 }
 
-@media (max-width: 650px) {
+@media (max-width: 1024px) {
   .header {
     &__logo {
       display: none;
@@ -125,7 +123,7 @@
       align-items: center;
       justify-content: center;
       width: 100%;
-      margin-left: 2px;
+      // margin-left: 2px;
     }
   }
   .main {
