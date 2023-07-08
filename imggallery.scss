@@ -10,11 +10,13 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 10%;
+    height: 5.5%;
     background-color: rgb(255, 177, 203);
     align-items: center;
     background-size: contain;
-  
+    position: sticky;
+    top:0;
+    z-index: 1;  
     &__logo {
       font-size: 4vw;
       color: black;
@@ -49,42 +51,43 @@
     }
   }
       .container{
-        height: 100vw;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
         width: 100%;
     }
-    .main{
-
+    .main{      
         height: 80%;
         .images{
             display: flex;
             flex-direction: row;
-            border: 2px solid red;
+            // border: 2px solid red;
             width: 100%;
             [class^="images__"]{
                 display: flex;
                 flex-direction:column ;
-                border: 2px solid yellow;
+                border: 0.5px solid gray;
                 width:33.333%;
                 box-sizing: border-box;
-                background-size: contain;
-                object-fit: cover;
+                // background-size: contain;
+                position: relative;
                 [class^="images__1"]
                 {
-                    box-sizing: border-box;
+                    // box-sizing: border-box;
                     width: 100%;
                     background-size: contain;
                     flex-grow: 1;
                 }
                 [class^="images__2"]
                 {
-                    box-sizing: border-box;
+                    // box-sizing: border-box;
                     width: 100%;
                     background-size: contain;
                     flex-grow: 1;
                 }
                 [class^="images__3"]
                 {
-                    box-sizing: border-box;
+                    // box-sizing: border-box;
                     width: 100%;
                     background-size: contain;
                 }
@@ -96,11 +99,13 @@
         background-color: palevioletred;
         display: flex;
         flex-direction: row;
-        gap: 1%;
-        
+        position: absolute;
         align-items: center;
         justify-content: right;
-       
+        z-index: 1;
+       width: 100%;
+       bottom: 0;
+       position: sticky;
        
       [class^="footer__"]{
         img{
@@ -114,3 +119,39 @@
         }
       }
     }
+    @media (max-width: 650px) {
+        .header {
+          &__logo {
+            display: none;
+          }
+          &__menu {
+            font-size: 3.5vw;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin-left: 2px;
+          }
+        }
+        .footer{
+      
+        align-items: center;
+        justify-content: center;
+        gap: 20%;
+       
+      [class^="footer__"]{
+        img{
+        background-size: contain;
+        width:13vw;
+        height: 13vw;
+        // border: solid 2px yellow;
+         border-radius: 100%;
+         align-items: center;
+        justify-content: center;
+        padding: auto;
+        margin-bottom: 8px;
+          
+      
+        }    
+        }
+        }
+      }
