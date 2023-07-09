@@ -69,8 +69,7 @@
   margin-left: 130px;
   margin-bottom: 10px;
   transition-duration: 0.4s;
-  font-size: 2vw;
-  padding-top: 1vw;
+  font-size: 1vw;
   font-family: cursive;
   text-transform: uppercase;
 }
@@ -92,7 +91,7 @@
   border-radius: 4px;
   transition: 0.5s ease-in-out;
   width: 60%;
-  background-image: url(person.jpg);
+  background-image: url("image.png");
   background-size: 19px 20px;
   background-repeat: no-repeat;
   padding: 5px;
@@ -105,7 +104,7 @@
   border-radius: 4px;
   width: 60%;
   transition: 0.5s ease-in-out;
-  background-image: url(call.png);
+  background-image: url("email.png");
   background-size: 19px 20px;
   background-repeat: no-repeat;
   padding: 5px;
@@ -117,7 +116,7 @@
   border-radius: 4px;
   width: 60%;
   transition: 0.5s ease-in-out;
-  background-image: url(call.png);
+  background-image: url("call.png");
   background-size: 19px 20px;
   background-repeat: no-repeat;
   padding: 5px;
@@ -130,7 +129,7 @@
   cursor: pointer;
   width: 100%;
 }
-.main input[type=button] {
+.main input[type=submit] {
   cursor: pointer;
 }
 .main textarea {
