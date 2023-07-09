@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" a href="contact.css">
+    <script src="contact.js"></script>
+    <title>Contact</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header__logo">By - Sejal Thakur</div>
+            <div class="header__menu">
+                <div class="header__menu-1"><a href="home.html">|Home&emsp;</a></div>
+                <div class="header__menu-2"><a href="imggallery.html">|Artworks&emsp;</a></div>
+                <div class="header__menu-3"><a href="review.html">|Reviews&emsp;</a></div>
+                <div class="header__menu-4"><a href="buy.html">|Buy Now&emsp;</a></div>
+                <div class="header__menu-5"><a href="connect.html">|Contact</a></div>
+            </div>
+        </div>
+        <div class="main">
+            <form onsubmit="return validateNumber()">
+                <table frame="box" align="center" id="form">
+                  <tr>
+                    <td>Name</td>
+                    <td>
+                      <label name="name" id="name"
+                        ><input class="input-box" type="text"
+                      /></label>
+                    </td>
+                  </tr>
+      
+                  <tr>
+                    <td>Email id</td>
+                    <td>
+                      <label name="email"
+                        ><input class="input-box" type="email"
+                      /></label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Phone Number</td>
+                    <td>
+                      <label name="phno"
+                        ><input class="input-box" type="number" id="numberInput" placeholder="Enter valid 10-digit number"
+                      /></label>
+                    </td>
+                  </tr>
+                    </div>
+                  </tr>
+                  <tr>
+                    <td>Drop a message</td>
+                    <td>
+                      <textarea name="message"  id="message"></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                        <input type="submit">
+                    </td>
+                  </tr>
+                </table>
+              </form>
+        </div>
+        <div class="footer">
+            <div class="footer__whatsapp"><img src="whatsapplogo.png"></div>
+            <div class="footer__instagram"><img src="iglogo.png"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
