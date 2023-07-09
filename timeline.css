@@ -57,51 +57,46 @@
 .main {
   height: 80%;
   display: flex;
-  flex-direction: row;
-  box-sizing: border-box;
-  justify-content: space-between;
-}
-.main__left {
-  flex-direction: column;
-  gap: 2%;
-  font-size: 2vw;
-  font-family: cursive;
-  font-weight: 20px;
-  align-items: normal;
-  width: 50%;
-  background-color: black;
-  left: 0;
-  padding: 0.1%;
-}
-.main__left-1, .main__left-2, .main__left-3, .main__left-4, .main__left-5 {
-  background-color: rgb(147, 109, 165);
-  border-radius: 10%;
-  box-shadow: 0px 5px 5px rgb(100, 71, 100);
-  height: 10vw;
+  padding-left: 100px;
   align-items: center;
-  justify-content: center;
-  border: 1px solid rgb(100, 71, 100);
+  background-color: rgb(145, 116, 145);
 }
-.main__right {
-  text-shadow: 7px 7px rgb(255, 177, 203);
-  display: flex;
-  flex-direction: column;
-  font-size: 8vw;
-  font-family: cursive;
-  font-weight: 10px;
+.main .timeline {
   justify-content: center;
-  width: 50%;
   align-items: center;
-  height: 100%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  background-image: url(img.jpeg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin-top: 4%;
-  margin-bottom: 0%;
+  position: relative;
+  max-width: 1200px;
+  margin: 100px auto;
+  border-left: 3px solid black;
+  padding: 0 20px 0 30px;
+}
+.main .timeline .checkpoint {
+  width: 70%;
+  position: relative;
+  border-radius: 4%;
+  padding: 10px 25px;
+  background-color: pink;
+  border: 1px solid black;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+.main .timeline .checkpoint .text {
+  background-color: white;
+  padding: 20px 30px;
+  border-radius: 2%;
+  font-size: 1vw;
+}
+.main .checkpoint::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgb(214, 133, 214);
+  position: absolute;
+  border: 3px solid black;
+  top: 10px;
+  left: -40px;
 }
 
 .footer {
@@ -122,32 +117,4 @@
   width: 3vw;
   height: 3vw;
   border-radius: 100%;
-}
-
-@media (max-width: 650px) {
-  .header__logo {
-    display: none;
-  }
-  .header__menu {
-    font-size: 3.5vw;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin-left: 2px;
-  }
-  .footer {
-    align-items: center;
-    justify-content: center;
-    gap: 20%;
-  }
-  .footer [class^=footer__] img {
-    background-size: contain;
-    width: 13vw;
-    height: 13vw;
-    border-radius: 100%;
-    align-items: center;
-    justify-content: center;
-    padding: auto;
-    margin-bottom: 8px;
-  }
-}/*# sourceMappingURL=review.css.map */
+}/*# sourceMappingURL=timeline.css.map */
