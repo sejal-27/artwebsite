@@ -59,29 +59,33 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  // justify-content: center;
+  
   align-items: center;
-  gap: 20px;
+  gap: 0px;
   background-image: url(buybg2.jpeg);
   background-size: contain;
   background-repeat: no-repeat;
   height: 80%;
   width: 100vw;
-  // border: solid yellow;
+  border: solid yellow;
   &__heading {
+    margin-top: 3vw;
     font-family: cursive;
     text-decoration: underline;
     font-size: 4vw;
-    margin-top: 5%;
     color: black;
     background-color: rgb(147, 109, 165);
     border-radius: 0%;
-    margin-bottom:2%;
+    position: relative;
+    align-items: flex-start;
   }
 
   &__table {
     display: flex;
     flex-direction: row;
+    position: absolute;
+    top: 5vw;
     justify-content: space-around;
     align-items: center;
     gap: 10%;
@@ -101,8 +105,9 @@
         height: 80%;
         padding: 10px;
         width: 20vw;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
+        padding: auto;
         border: 1px solid black;
         height: 80%;
         background-color: rgb(255, 177, 203);
@@ -128,23 +133,23 @@
     }
     .image_1 {
       background-image: url("./buy_product1.jpeg");
-      width: 700px;
-      height: 700px;
+      width: 15vw;
+      height: 15vw;
       background-size: contain;
       // border: 2px solid red;
       background-repeat: no-repeat;
     }
     .image_2 {
       background-image: url("./buy_product2.jpeg");
-      width: 700px;
-      height:700px;
+      width: 15vw;
+      height:15vw;
       background-size: contain;
       background-repeat: no-repeat;
     }
     .image_3 {
       background-image: url("./buy_product3.jpeg");
-      width: 700px;
-      height: 700px;
+      width: 15vw;
+      height: 15vw;
       background-size: contain;
       background-repeat: no-repeat;
     }
