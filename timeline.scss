@@ -6,6 +6,16 @@
 .body{
     font-size: 35px;
 }
+// @keyframes color{
+//   0%{background:rgb(193, 143, 216);}
+//   20%{background:pink;}
+//   40%{background:rgb(214, 145, 235);}
+//   40%{background:rgb(255, 217, 230);}
+//   80%{background:rgb(210, 181, 230);}
+//   100%{background:rgb(193, 143, 216);}
+
+
+// }
 
       .container{
         height: 100%;
@@ -65,7 +75,8 @@
         display: flex;
         padding-left: 100px;
         align-items: center;
-        background-color: rgb(145, 116, 145);
+        background-color:  rgb(147, 109, 165);
+        // animation: color 8s infinite linear;
         .timeline{
             justify-content: center;
             align-items: center;
