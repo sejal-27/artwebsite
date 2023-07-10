@@ -20,6 +20,7 @@
   background-color: rgb(255, 177, 203);
   align-items: center;
   background-size: contain;
+  position: relative;
 }
 .header__logo {
   font-size: 4vw;
@@ -62,7 +63,7 @@
   font-family: cursive;
   text-decoration: underline;
   font-size: 4vw;
-  margin-top: 5%;
+  margin-top: 25%;
   color: black;
   background-color: rgb(147, 109, 165);
   border-radius: 5%;
@@ -72,7 +73,7 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  gap: 10%;
+  gap: 5%;
   font-size: 2vw;
   width: 100%;
   height: 100vh;
@@ -150,7 +151,33 @@
   border-radius: 100%;
 }
 
+.footer {
+  height: 10%;
+  background-color: palevioletred;
+  display: flex;
+  flex-direction: row;
+  gap: 1%;
+  align-items: center;
+  justify-content: right;
+  padding: auto;
+}
+.footer [class^=footer__] img {
+  background-size: contain;
+  width: 3vw;
+  height: 3vw;
+  border-radius: 100%;
+}
+
 @media (max-width: 650px) {
+  .container {
+    height: 100vh;
+    width: 100%;
+    border: 2px solid greenyellow;
+  }
+  .header {
+    height: 10%;
+    position: relative;
+  }
   .header__logo {
     display: none;
   }
@@ -161,29 +188,73 @@
     width: 100%;
   }
   .main {
+    position: absolute;
+    height: 80%;
     display: flex;
     flex-direction: column;
     height: 80%;
     justify-content: center;
     align-items: center;
+    border: 5px solid green;
+    background-image: url("buybg1.jpeg");
+    background-size: contain;
   }
   .main__table {
+    border: 5px solid green;
+    margin-top: 10%;
     display: flex;
     flex-direction: column;
     height: 100%;
     width: 100%;
   }
-  .main__table .details {
-    font-size: 3vw;
+  .main__table-1, .main__table-2, .main__table-3 {
+    border: 2px solid yellow;
+    width: 60%;
+    height: 40%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  .main__table-1 .heading, .main__table-2 .heading, .main__table-3 .heading {
+    width: 100%;
+    border-radius: 5%;
+    font-size: 5vw;
+  }
+  .main__table-1 .heading .details, .main__table-2 .heading .details, .main__table-3 .heading .details {
+    font-size: 5vw;
     display: flex;
     justify-content: center;
     align-items: center;
     height: auto;
     width: 100%;
   }
-  .main__table__heading {
-    font-size: 6vw;
-    height: auto;
-    width: auto;
+  .main__table .button {
+    color: black;
+    font-size: 3vw;
+    padding: auto;
+  }
+  .main__table .button:hover {
+    background-color: white;
+    border: 2px solid rgb(255, 177, 203);
+    color: black;
+    border-radius: 10%;
+    font-size: 2vw;
+    padding: auto;
+    text-transform: uppercase;
+  }
+  .footer {
+    height: 10%;
+    align-items: center;
+    justify-content: center;
+    gap: 20%;
+  }
+  .footer [class^=footer__] img {
+    background-size: contain;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: auto;
   }
 }/*# sourceMappingURL=buy.css.map */

@@ -90,6 +90,7 @@
   gap: 1%;
   align-items: center;
   justify-content: right;
+  padding: auto;
 }
 .footer [class^=footer__] img {
   background-size: contain;
@@ -99,43 +100,50 @@
 }
 
 @media (max-width: 650px) {
-  .header__logo {
+  .container {
+    height: 100vh;
+    width: 100%;
+  }
+  .container .header {
+    height: 10%;
+  }
+  .container .header__logo {
     display: none;
   }
-  .header__menu {
+  .container .header__menu {
     font-size: 3.5vw;
     align-items: center;
     justify-content: center;
     width: 100%;
     margin-left: 2px;
   }
-  .main {
+  .container .main {
+    height: 80%;
     display: flex;
     flex-direction: column;
     height: 80%;
     justify-content: center;
     align-items: center;
   }
-  .main__img {
+  .container .main__img {
     border-radius: 50%;
     height: 200px;
     width: 200px;
     background-size: contain;
   }
-  .footer {
+  .container .footer {
+    height: 10%;
     align-items: center;
     justify-content: center;
     gap: 20%;
   }
-  .footer [class^=footer__] img {
+  .container .footer [class^=footer__] img {
     background-size: contain;
-    width: 13vw;
-    height: 13vw;
-    border: solid 2px yellow;
+    width: 10vw;
+    height: 10vw;
     border-radius: 100%;
     align-items: center;
     justify-content: center;
     padding: auto;
-    margin-bottom: 8px;
   }
 }/*# sourceMappingURL=home.css.map */
