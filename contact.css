@@ -1,0 +1,181 @@
+* {
+  margin: 0px 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+* .body {
+  font-family: serif;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 10%;
+  background-color: rgb(255, 177, 203);
+  align-items: center;
+  background-size: contain;
+}
+.header__logo {
+  font-size: 4vw;
+  color: black;
+  width: 39.55%;
+  margin-left: 1vw;
+}
+.header__menu {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-size: 2vw;
+  width: 60.45%;
+}
+.header__menu-1 a, .header__menu-2 a, .header__menu-3 a, .header__menu-4 a, .header__menu-5 a {
+  color: black;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+.header__menu-1 a:hover, .header__menu-2 a:hover, .header__menu-3 a:hover, .header__menu-4 a:hover, .header__menu-5 a:hover {
+  color: white;
+  background-color: rgb(147, 109, 165);
+  border-radius: 7%;
+  box-shadow: 0px 5px 5px black;
+  font-size: 2.5vw;
+}
+
+.main {
+  background-image: url(buybg2.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main input[type=submit] {
+  border-radius: 7%;
+  box-shadow: 0px 5px 5px black;
+  background-color: palevioletred;
+  box-shadow: 0 5px 5px black;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  margin-left: 130px;
+  margin-bottom: 10px;
+  transition-duration: 0.4s;
+  font-size: 1vw;
+  font-family: cursive;
+  text-transform: uppercase;
+}
+.main input[type=submit]:hover {
+  box-shadow: 0 8px 8px black;
+  color: black;
+  background-color: rgb(187, 108, 121);
+}
+@keyframes nameanimate {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: pink;
+  }
+}
+.main input[type=text] {
+  border: 2px solid black;
+  border-radius: 4px;
+  transition: 0.5s ease-in-out;
+  width: 60%;
+  background-image: url("image.png");
+  background-size: 19px 20px;
+  background-repeat: no-repeat;
+  padding: 5px;
+  padding-left: 30px;
+  color: black;
+  box-sizing: border-box;
+}
+.main input[type=email] {
+  border: 2px solid black;
+  border-radius: 4px;
+  width: 60%;
+  transition: 0.5s ease-in-out;
+  background-image: url("email.png");
+  background-size: 19px 20px;
+  background-repeat: no-repeat;
+  padding: 5px;
+  padding-left: 30px;
+  box-sizing: border-box;
+}
+.main input[type=number] {
+  border: 2px solid black;
+  border-radius: 4px;
+  width: 60%;
+  transition: 0.5s ease-in-out;
+  background-image: url("call.png");
+  background-size: 19px 20px;
+  background-repeat: no-repeat;
+  padding: 5px;
+  padding-left: 30px;
+  box-sizing: border-box;
+}
+.main .input-box:focus {
+  background-color: pink;
+  color: black;
+  cursor: pointer;
+  width: 100%;
+}
+.main input[type=submit] {
+  cursor: pointer;
+}
+.main textarea {
+  border: 2px solid black;
+  border-radius: 4px;
+  width: 60%;
+  transition: 0.5s ease-in-out;
+}
+.main textarea:hover {
+  background-color: pink;
+  color: black;
+  width: 100%;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5vw;
+  padding-top: 3vw;
+  padding-left: 4vw;
+  background-color: rgb(191, 153, 209);
+  box-shadow: 0 8px 10px black;
+  transition: 0.5s;
+  border-radius: 5%;
+  color: black;
+  height: 20vw;
+  width: 40vw;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 2vw;
+  font-weight: 3vw;
+}
+
+.footer {
+  height: 10%;
+  background-color: palevioletred;
+  display: flex;
+  flex-direction: row;
+  gap: 1%;
+  align-items: center;
+  justify-content: right;
+}
+.footer [class^=footer__] img {
+  background-size: contain;
+  width: 3vw;
+  height: 3vw;
+  border-radius: 100%;
+}/*# sourceMappingURL=contact.css.map */

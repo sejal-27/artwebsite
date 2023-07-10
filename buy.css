@@ -45,32 +45,38 @@
   background-color: rgb(147, 109, 165);
   transform: scale(3px);
   font-size: 2.5vw;
+  border-radius: 7%;
+  box-shadow: 0px 5px 5px black;
 }
 
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  gap: 20px;
-  background-image: url(buybg.jpeg);
+  gap: 0px;
+  background-image: url(buybg2.jpeg);
   background-size: contain;
   background-repeat: no-repeat;
   height: 80%;
   width: 100vw;
 }
 .main__heading {
+  margin-top: 3vw;
   font-family: cursive;
   text-decoration: underline;
   font-size: 4vw;
-  margin-top: 25%;
   color: black;
   background-color: rgb(147, 109, 165);
-  border-radius: 5%;
+  border-radius: 7%;
+  box-shadow: 0px 5px 5px black;
+  position: relative;
+  align-items: flex-start;
 }
 .main__table {
   display: flex;
   flex-direction: row;
+  position: absolute;
+  top: 5vw;
   justify-content: space-around;
   align-items: center;
   gap: 5%;
@@ -79,18 +85,23 @@
   height: 100vh;
 }
 .main__table-1 .heading, .main__table-2 .heading, .main__table-3 .heading {
-  background-color: rgb(201, 164, 164);
+  box-shadow: 0 10px 25px black;
+  transition: 0.3s;
+  height: 80%;
   padding: 10px;
   width: 20vw;
   justify-content: center;
   align-items: center;
+  padding: auto;
   border: 1px solid black;
+  height: 80%;
+  background-color: rgb(255, 177, 203);
   display: flex;
   flex-direction: column;
   border-radius: 20%;
 }
 .main__table-1 .heading .details, .main__table-2 .heading .details, .main__table-3 .heading .details {
-  font-size: 1.5vw;
+  font-size: 2vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -98,26 +109,27 @@
 .main__table-1 .heading:hover, .main__table-2 .heading:hover, .main__table-3 .heading:hover {
   background-color: rgb(147, 109, 165);
   background-size: contain;
-  box-shadow: 10px 10px burlywood;
+  box-shadow: 0 45px 50px black;
+  border-radius: 20%;
 }
 .main__table .image_1 {
   background-image: url("./buy_product1.jpeg");
-  width: 100px;
-  height: 100px;
+  width: 15vw;
+  height: 15vw;
   background-size: contain;
   background-repeat: no-repeat;
 }
 .main__table .image_2 {
   background-image: url("./buy_product2.jpeg");
-  width: 100px;
-  height: 100px;
+  width: 15vw;
+  height: 15vw;
   background-size: contain;
   background-repeat: no-repeat;
 }
 .main__table .image_3 {
   background-image: url("./buy_product3.jpeg");
-  width: 100px;
-  height: 100px;
+  width: 15vw;
+  height: 15vw;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -135,21 +147,6 @@
   padding: auto;
   text-transform: uppercase;
 }
-.main .footer {
-  height: 10%;
-  background-color: palevioletred;
-  display: flex;
-  flex-direction: row;
-  gap: 1%;
-  align-items: center;
-  justify-content: right;
-}
-.main .footer [class^=footer__] img {
-  background-size: contain;
-  width: 3vw;
-  height: 3vw;
-  border-radius: 100%;
-}
 
 .footer {
   height: 10%;
@@ -157,9 +154,9 @@
   display: flex;
   flex-direction: row;
   gap: 1%;
+  bottom: 0;
   align-items: center;
   justify-content: right;
-  padding: auto;
 }
 .footer [class^=footer__] img {
   background-size: contain;
@@ -172,7 +169,6 @@
   .container {
     height: 100vh;
     width: 100%;
-    border: 2px solid greenyellow;
   }
   .header {
     height: 10%;
@@ -195,12 +191,10 @@
     height: 80%;
     justify-content: center;
     align-items: center;
-    border: 5px solid green;
     background-image: url("buybg1.jpeg");
     background-size: contain;
   }
   .main__table {
-    border: 5px solid green;
     margin-top: 10%;
     display: flex;
     flex-direction: column;
@@ -208,7 +202,6 @@
     width: 100%;
   }
   .main__table-1, .main__table-2, .main__table-3 {
-    border: 2px solid yellow;
     width: 60%;
     height: 40%;
     align-items: center;
@@ -242,6 +235,36 @@
     padding: auto;
     text-transform: uppercase;
   }
+}
+.footer {
+  height: 10%;
+  background-color: palevioletred;
+  display: flex;
+  flex-direction: row;
+  gap: 1%;
+  align-items: center;
+  justify-content: right;
+}
+.footer [class^=footer__] img {
+  background-size: contain;
+  width: 3vw;
+  height: 3vw;
+  border-radius: 100%;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    height: 10%;
+  }
+  .header__logo {
+    display: none;
+  }
+  .header__menu {
+    font-size: 3.5vw;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
   .footer {
     height: 10%;
     align-items: center;
@@ -250,11 +273,11 @@
   }
   .footer [class^=footer__] img {
     background-size: contain;
-    width: 10vw;
-    height: 10vw;
+    width: 13vw;
+    height: 13vw;
     border-radius: 100%;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: auto;
   }
 }/*# sourceMappingURL=buy.css.map */
